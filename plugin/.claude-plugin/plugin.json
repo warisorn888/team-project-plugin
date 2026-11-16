@@ -1,0 +1,28 @@
+{
+  "name": "team-project",
+  "version": "0.1.0",
+  "description": "Team Project: shared project memory and threads for a team, from a Team Project server.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "apiBaseUrl": {
+      "type": "string",
+      "title": "API base URL",
+      "description": "Base URL of the Team Project server. The team server is http://10.20.6.4:5080 (needs the company VPN).",
+      "required": true,
+      "default": "http://10.20.6.4:5080"
+    },
+    "token": {
+      "type": "string",
+      "title": "API token",
+      "description": "Your personal Team Project API token.",
+      "required": true,
+      "sensitive": true
+    },
+    "uploadTranscript": {
+      "type": "boolean",
+      "title": "Upload thread transcripts",
+      "description": "Upload each turn of a picked thread, filtered for secrets and personal data by gitleaks and the plugin's own rules, so the team can search it. Needs gitleaks installed.",
+      "default": true
+    }
+  }
+}

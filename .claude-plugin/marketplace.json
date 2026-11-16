@@ -1,0 +1,16 @@
+{
+  "name": "team-project",
+  "owner": {
+    "name": "Team Project"
+  },
+  "metadata": {
+    "description": "Team Project plugin marketplace"
+  },
+  "plugins": [
+    {
+      "name": "team-project",
+      "source": "./plugin",
+      "description": "Shared project memory and threads for a team, from a Team Project server."
+    }
+  ]
+}
